@@ -2,6 +2,8 @@
 
 <h1>Blogs</h1>
 
+<hr>
+
 <table>
   <thead>
     <tr>
@@ -18,11 +20,17 @@
         <td><%= blog.body %></td>
         <td><%= link_to 'Show', blog %></td>
         <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
+
+<h1>Skills</h1>
+
+<hr>
+
+<%= @skills.inspect %>
 
 <br>
 
