@@ -1,4 +1,4 @@
 class Portfolio < ApplicationRecord
-  def index
-  end
-end
+  validates_presence_of :title, :body, :main_image, :thumb_image
+end   
+
